@@ -1,0 +1,43 @@
+@import "~bootstrap/scss/bootstrap"
+
+main > div
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    display: flex
+    overflow: hidden
+
+nav
+    position: relative
+    flex: 0
+    flex-basis: 380px
+    overflow-x: hidden
+    overflow-y: auto
+    display: flex
+    flex-direction: column
+    padding-bottom: 25px
+    background-color: white
+
+content
+    position: relative
+    flex: 2
+    overflow-x: hidden
+    overflow-y: auto
+    height: 100%
+    display: flex
+    flex-direction: column
+
+content iframe
+    flex: 1
+
+content > div
+    flex: 0
+
+content div > h1
+    flex: 1
+
+.sidebar-link:hover
+    cursor: pointer
+    color: blue
